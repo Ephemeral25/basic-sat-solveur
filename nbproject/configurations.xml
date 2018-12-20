@@ -10,12 +10,13 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>CnfDataSheet</itemPath>
+      <itemPath>CnfDataSheet.cnf</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>cnfreader.c</itemPath>
+      <itemPath>newmain.c</itemPath>
       <itemPath>satsolver.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -46,11 +47,13 @@
       </compileType>
       <item path=".gitignore" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="CnfDataSheet" ex="false" tool="3" flavor2="0">
+      <item path="CnfDataSheet.cnf" ex="false" tool="3" flavor2="0">
       </item>
       <item path="cnfreader.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="cnfreader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="newmain.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="satsolver.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -80,11 +83,13 @@
       </compileType>
       <item path=".gitignore" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="CnfDataSheet" ex="false" tool="3" flavor2="0">
+      <item path="CnfDataSheet.cnf" ex="false" tool="3" flavor2="0">
       </item>
       <item path="cnfreader.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="cnfreader.h" ex="false" tool="3" flavor2="0">
+      </item>
+      <item path="newmain.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="satsolver.c" ex="false" tool="0" flavor2="0">
       </item>

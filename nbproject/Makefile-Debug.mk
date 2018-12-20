@@ -36,6 +36,7 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 # Object Files
 OBJECTFILES= \
 	${OBJECTDIR}/cnfreader.o \
+	${OBJECTDIR}/newmain.o \
 	${OBJECTDIR}/satsolver.o
 
 
@@ -67,6 +68,11 @@ ${OBJECTDIR}/cnfreader.o: cnfreader.c
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/cnfreader.o cnfreader.c
+
+${OBJECTDIR}/newmain.o: newmain.c
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.c) -g -std=c11 -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/newmain.o newmain.c
 
 ${OBJECTDIR}/satsolver.o: satsolver.c
 	${MKDIR} -p ${OBJECTDIR}
