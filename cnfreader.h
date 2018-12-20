@@ -14,7 +14,7 @@
 #ifndef CNFREADER_H
 #define CNFREADER_H
 
-
+//qsdjkqsd
 
 #endif /* CNFREADER_H */
 
