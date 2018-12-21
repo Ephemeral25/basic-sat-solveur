@@ -16,12 +16,17 @@
 #include <stdlib.h>
 
 FILE *open_file(const char *filename);
-//Return CNF file's lines number
-int lCount_file(FILE *data);
-//Return CNF file's atoms number
-int aCount_file(FILE *data);
-//Return CNF file's atoms number per line
-int aCountperLine_file(const char *filename);
+
+//prints comments contained in the DIMACS's file 
+int readComments_file(FILE *data);
+
+//returns DIMACS file's clauses number
+int clauseCount_file(FILE *data);
+//returns DIMACS file's atoms total number
+int atomCount_file(FILE *data);
+//returns DIMACS file's atoms number per line
+int aCountPerL_file(const char *filename);
+//returns CNF file's litterals number
 
 //Translate a CNF file to 2D array
 void lTranslate_file(FILE *data);

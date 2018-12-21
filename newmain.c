@@ -16,7 +16,7 @@
  * 
  */
 int main(int argc, char** argv) {
-    char f[] = "CnfDataSheet.cnf";
+    char f[] = "DataSheet.txt";
     FILE *data = open_file(f);
     lTranslate_file(data);
     return (EXIT_SUCCESS);

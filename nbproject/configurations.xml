@@ -10,7 +10,7 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
-      <itemPath>CnfDataSheet.cnf</itemPath>
+      <itemPath>DataSheet.txt</itemPath>
     </logicalFolder>
     <logicalFolder name="SourceFiles"
                    displayName="Source Files"
@@ -47,7 +47,7 @@
       </compileType>
       <item path=".gitignore" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="CnfDataSheet.cnf" ex="false" tool="3" flavor2="0">
+      <item path="DataSheet.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="cnfreader.c" ex="false" tool="0" flavor2="0">
       </item>
@@ -83,7 +83,7 @@
       </compileType>
       <item path=".gitignore" ex="false" tool="3" flavor2="0">
       </item>
-      <item path="CnfDataSheet.cnf" ex="false" tool="3" flavor2="0">
+      <item path="DataSheet.txt" ex="false" tool="3" flavor2="0">
       </item>
       <item path="cnfreader.c" ex="false" tool="0" flavor2="0">
       </item>
