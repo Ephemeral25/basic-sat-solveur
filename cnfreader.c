@@ -3,7 +3,7 @@
  */
 #include "cnfreader.h"
 
-const int VERBOSE = 1;
+#define VERBOSE 1
 
 FILE *open_file(const char *filename) {
     FILE *data;
@@ -16,30 +16,60 @@ FILE *open_file(const char *filename) {
     return data;
 }
 
-int lCount_file(FILE *data) {
+int readComments_file(FILE *data) {
     fseek(data, 0, SEEK_SET);
-    int n, c;
+    int c = NULL;
     
-    while((c = fgetc(data) != EOF))
-        if(c == 10)
-            n++;
-    
-    if(VERBOSE)
-        printf("[INFO] : CNF File contains %d lines\n", n);
-    return n;   
+    if((c = fgetc(data), c == 99) && ((c = fgetc(data)), c == 32)) {
+        while(c != 10) {
+            printf("%c", c);
+            c = fgetc(data);
+        }
+        return(EXIT_SUCCESS);
+    }
+    fprintf(stderr, "[ERROR]: Couldn't read DIMACS file's comments\n");
+    return(EXIT_FAILURE);
 }
 
-int aCount_file(FILE *data) {
+/**
+ * 
+ * @param data
+ * @return success/fail
+ * 
+ *  @comment Comments on DIMACS's file have a 65char lim
+ */
+int clauseCount_file(FILE *data) {
+    fseek(data, 0, SEEK_SET);
+    int c = NULL, n = NULL;
+    
+    while(c = fgetc(data), c, n < 65) {
+        if(c == 112, (c = fgetc(data), c == 32)) {
+            for(;n < 3 ; ) {
+                
+            }
+                
+            
+        }
+        
+    }
+    fprintf(stderr ,"");
+    return(EXIT_FAILURE);
+}
+
+int atomCount_file(FILE *data) {
     
 }
 
-int aCountperLine_file(const char *filename) {
+int atomCountperL_file(const char *filename) {
     
 }
 
 void lTranslate_file(FILE *data) {
+    if(VERBOSE)
+        printf("[INFO] Starting file translating...\n");
     //Place cursor at the begginning of the file
-    lCount_file(data);
+  readComments_file(data);
     
-    
+  if(VERBOSE)
+      printf("\n[INFO] Successfully translated the file!\n");
 }
