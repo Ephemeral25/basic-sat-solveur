@@ -41,18 +41,22 @@ int readComments_file(FILE *data) {
 int clauseCount_file(FILE *data) {
     fseek(data, 0, SEEK_SET);
     int c = NULL, n = NULL;
+    char *tmp = NULL;
     
-    while(c = fgetc(data), c, n < 65) {
-        if(c == 112, (c = fgetc(data), c == 32)) {
-            for(;n < 3 ; ) {
-                
+    for(c = fgetc(data); c != EOF; c=fgetc(data)) {
+        if(c == 112, (c = fgetc(data), c == 32)) 
+            for(;c != '\n'; c = fgetc(data)) {
+                if(c == 32)
+                    n++;
+                if(n == 3) {
+                    while
+                    return c;
+                }
             }
                 
-            
-        }
-        
     }
-    fprintf(stderr ,"");
+    
+    fprintf(stderr ,"[ERROR]: Coundl't gather info for DIMACS's file!");
     return(EXIT_FAILURE);
 }
 
@@ -66,10 +70,10 @@ int atomCountperL_file(const char *filename) {
 
 void lTranslate_file(FILE *data) {
     if(VERBOSE)
-        printf("[INFO] Starting file translating...\n");
+        printf("[INFO]: Starting file translating...\n");
     //Place cursor at the begginning of the file
   readComments_file(data);
     
   if(VERBOSE)
-      printf("\n[INFO] Successfully translated the file!\n");
+      printf("\n[INFO]: Successfully translated the file!\n");
 }
