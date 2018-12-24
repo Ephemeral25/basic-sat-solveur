@@ -21,15 +21,18 @@ FILE *open_file(const char *filename);
 int readComments_file(FILE *data);
 
 //returns DIMACS file's clauses number
-int clauseCount_file(FILE *data);
+int clauseCount_file(FILE *data); //TODO
+
+
+
 //returns DIMACS file's atoms total number
 int atomCount_file(FILE *data);
 //returns DIMACS file's atoms number per line
-int aCountPerL_file(const char *filename);
+int atomCountperL_file(const char *filename);
 //returns CNF file's litterals number
 
 //Translate a CNF file to 2D array
-void lTranslate_file(FILE *data);
+void lTranslate_file(FILE *data); //TODO : complete time by time
 
 
 #endif /* CNFREADER_H */

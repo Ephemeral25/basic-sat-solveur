@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=basic_sat_solver
+PROJECTNAME=basic-sat-solveur
 
 # Active Configuration
 DEFAULTCONF=Debug
